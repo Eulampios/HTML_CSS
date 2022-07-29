@@ -1,0 +1,17 @@
+.header {
+    background-color: #ccc;
+}
+
+.contain {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.footer {
+    background-color: darkgrey;
+}
+
+
+.font-red {
+    color: red;
+    font-weight: bold;
+}
