@@ -1,0 +1,63 @@
+/* h3{
+    color: blueviolet;
+} */
+
+.heading3 {
+    color: blue;
+}
+
+.back-grey {
+    background-color: rgb(215, 56, 56);
+}
+
+.heading2 {
+    color: white;
+}
+
+/* a[href] {
+    color: aqua;
+    background-color: gray; */
+}
+
+
+input[type="text"] {
+    color: blueviolet;
+}
+
+.em {
+    color: rgb(75, 165, 42);
+}
+
+
+.block {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #ccc;
+    background-image: url(https://kartinkin.net/uploads/posts/2021-03/1616125444_6-p-elbrus-krasivie-foto-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17pt;
+}
+
+.text {
+    color: blue;
+    font-family: serif;
+}
+
+.heading2 {
+    text-align: center;
+    color: #000;
+}
+
+.list {
+    list-style-type: none;
+}
+
+ul li a {
+    color: green;
+}
