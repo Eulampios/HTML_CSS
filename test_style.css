@@ -16,8 +16,8 @@
 
 /* a[href] {
     color: aqua;
-    background-color: gray; */
-}
+    background-color: gray;
+} */
 
 
 input[type="text"] {
@@ -56,8 +56,27 @@ body {
 
 .list {
     list-style-type: none;
+    color: rebeccapurple;
+    background-color: aqua;
 }
 
+/* будет искать вложенный А в LI и в UL. Лучше не использовать, т.к. потребляет много ресурсов.
+Лучше делать через классы */
 ul li a {
     color: green;
+    /* background-color: yellow; */
+}
+
+.link {
+    color: chocolate;
+}
+
+/* дочений блок li */
+.menu>li {
+    border: solid black 1px;
+}
+
+/* соседний блок с классом text2 будет иметь синий фон */
+.menu+.text2 {
+    background-color: blue;
 }
