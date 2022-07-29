@@ -71,7 +71,7 @@ ul li a {
     color: chocolate;
 }
 
-/* дочений блок li */
+/* дочений блок li (menu - это родительский блок) */
 .menu>li {
     border: solid black 1px;
 }
