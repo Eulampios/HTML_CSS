@@ -6,6 +6,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
+
 .footer {
     background-color: darkgrey;
 }
@@ -14,4 +15,46 @@
 .font-red {
     color: red;
     font-weight: bold;
+}
+
+/*обнуляем все отступы */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    border: 1px solid #000;
+    width: 350;
+    height: 250;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 16px;
+    box-sizing: border-box; /* нужно, чтобы не учитывать padding, т.к. он увеличивает размер блока*/
+}
+
+.block2 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    float: left;
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.footer2 {
+    height: 50px;
+    background-color: grey;
+    clear: both; /*нужно, чтобы footer заметил блок, который перекрывает*/
+    margin-left: 25px;
+}
+
+.heading {
+    border: 1px solid red;
+    overflow: hidden; /* скрыть перекрытие блоков, скрыть перекрывающиеся элементы*/
+    margin-top: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
