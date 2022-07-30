@@ -31,11 +31,46 @@
 }
 
 .menu__list:hover .menu__link {
-    /*при наведении курсора на родительский блок (menu__list), пропадает подчеркивание у дочернего (menu__link)*/
+    /* псевдокласс. при наведении курсора на родительский блок (menu__list), пропадает подчеркивание у дочернего (menu__link)*/
     text-decoration: none;
 }
 
 
-    .menu2__list_new:after { /*это псевдоэлемент, будет отображаться на кажодой странице*/
-        content: " super new ";
-    }
+.menu2__list_new:after {
+    /*отображение после. это псевдоэлемент, будет отображаться на кажодой странице*/
+    content: " super new ";
+    color: red;
+}
+
+.menu2__list:before {
+    /*отображение перед*/
+    content: "* ";
+}
+
+.menu2 {
+    list-style-type: none;
+}
+
+.menu2__list:hover::after {
+    /*комбинация псевдоэлемента и псевдокласса*/
+    content: " <<<";
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+
+.product {
+    width: 250px;
+    border: 1px solid #000;
+}
+
+.img_product {
+    height: 150px;
+    background-color: forestgreen;
+}
+
+.product_new::after {
+    content: " NEW";
+    color: red;
+
+}
