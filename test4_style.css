@@ -1,10 +1,16 @@
 .block {
     width: 100px;
-    height: 100px;
+    height: 50px; /* надо убрать, чтобы растянуть при помощи параметра align-items: stretch в родительском блоке */
     border: 1px solid #000;
-    display: inline ;
+
 }
 
 .content {
     border: 1px solid #000;
+    display: flex; /*расположить все дочерние элементы в ряд*/
+    justify-content: space-around; /*flex-start прижимает внутренние элементы к левой границе родительского блока, а flex-end к правой, center - по центру, space-arround - распределяет расстояния между блоками*/
+    height: 100px;
+    background-color: #ccc;
+    align-items: flex-start; /*центрирование по вертикали. flex-end прижмет к нижней границе, flex-start прижмет к верхней границе, stretch растягивает элементы, но ГЛАВНОЕ, ЧТОБЫ У НИХ НЕ БЫЛО ВЫСОТЫ в данном случае у элементов block!!!*/
+
 }
