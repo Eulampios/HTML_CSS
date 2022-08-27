@@ -1,0 +1,12 @@
+.header {
+    height: 80px;
+    background: darkgray;
+
+}
+
+@media (max-width: 500px) {
+    .header {
+        background: blueviolet;
+        border: 1px solid #000;
+    }
+}
