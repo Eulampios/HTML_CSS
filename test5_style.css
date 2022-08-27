@@ -18,7 +18,7 @@
 .content {
     display: flex;
     justify-content:space-around;
-    /*flex-wrap: wrap; /*переносит объекты на следующую строку при использовании flex-direction параметр роли не играет */
+    /*flex-wrap: wrap; /*переносит объекты на следующую строку. при использовании flex-direction параметр роли не играет */
     /*flex-direction: column; /*чтобы расположить блоки в столбец, row будет в строку*/
     height: 450px;
 }
