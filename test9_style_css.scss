@@ -1,0 +1,53 @@
+$width-site: 1300px; // переменная
+$border-width: 1px; // переменная
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: #eee;
+    width: $width-site;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    width: $width-site;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.menu__list {
+    list-style-type: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    display: block;
+    padding: 16px 32px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #eee;
+    width: $width-site;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 50px 0;
+    width: $width-site;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__item {
+    width: $width-site / 3 - 2 * $border-width;
+    height: 250px;
+    border: $border-width solid #000;
+}
