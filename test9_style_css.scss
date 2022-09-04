@@ -18,17 +18,16 @@ $border-width: 1px; // переменная
     width: $width-site;
     margin: 0 auto;
     justify-content: center;
-}
 
-
-.menu__list {
-    list-style-type: none;
-}
-
-.menu__link {
-    text-decoration: none;
-    display: block;
-    padding: 16px 32px;
+    &__list {
+        list-style-type: none;
+    }
+    
+    &__link { // & берет название из родителя, т.е. menu
+        text-decoration: none;
+        display: block;
+        padding: 16px 32px;
+    }
 }
 
 .footer {
@@ -44,10 +43,11 @@ $border-width: 1px; // переменная
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+
+    &__item {
+        width: $width-site / 3 - 2 * $border-width;
+        height: 250px;
+        border: $border-width solid #000;
+    }
 }
 
-.content__item {
-    width: $width-site / 3 - 2 * $border-width;
-    height: 250px;
-    border: $border-width solid #000;
-}
